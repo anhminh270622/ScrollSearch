@@ -28,13 +28,13 @@
                 flex-direction: column;
                 height: 30%;
                 color: $primary-color;
-
                 .category {
                     text-transform: uppercase;
-                    padding-top: 5px;
+                    padding-top: 10px;
                 }
 
                 .title {
+                    padding: 10px 0;
                     &:hover {
                         color: #390bae;
                     }
@@ -49,6 +49,9 @@
         .no-products {
             padding-top: 50px;
         }
+    }
+    .loader{
+        min-height: 1px;
     }
 
 }

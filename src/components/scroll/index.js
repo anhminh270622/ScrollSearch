@@ -66,7 +66,7 @@ const App = () => {
                     <div className="no-products">Không có sản phẩm</div>
                 )}
             </div>
-            <div ref={loader} />
+            <div className="loader" ref={loader} />
         </div>
     );
 };
