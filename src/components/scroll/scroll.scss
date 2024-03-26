@@ -28,6 +28,7 @@
                 flex-direction: column;
                 height: 30%;
                 color: $primary-color;
+
                 .category {
                     text-transform: uppercase;
                     padding-top: 10px;
@@ -35,6 +36,7 @@
 
                 .title {
                     padding: 10px 0;
+
                     &:hover {
                         color: #390bae;
                     }
@@ -50,8 +52,29 @@
             padding-top: 50px;
         }
     }
-    .loader{
+
+    .loader {
         min-height: 1px;
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll {
+        /* Thiết lập kiểu cho màn hình mobile */
+        font-size: 10px;
+        .products-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    /* Thiết lập kiểu cho màn hình máy tính bảng */
+    .scroll {
+        font-size: 12px;
+        .products-list {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 }
